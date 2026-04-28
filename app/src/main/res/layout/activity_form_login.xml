@@ -9,21 +9,61 @@
     tools:context=".FormLogin">
 
     <ImageView
-        android:layout_width="200dp"
-        android:layout_height="255dp"
-        android:layout_marginEnd="124dp"
+        android:layout_width="488dp"
+        android:layout_height="423dp"
         android:src="@drawable/palacio"
-        app:layout_constraintEnd_toEndOf="parent"
-        tools:layout_editor_absoluteY="0dp" />
+        tools:layout_editor_absoluteX="-39dp"
+        tools:layout_editor_absoluteY="-59dp" />
 
-    <View
-        android:id="@+id/containercomponens"
-        style="@style/Container.Components"
-        android:layout_width="324dp"
-        android:layout_height="100dp"
+    <EditText
+
+        style="@style/Edit_Text"
+        android: android:id="@+id/edit_email"
+        android:drawableRight="@drawable/email"
+        android:hint="E-mail"
+        app:layout_constraintStart_toStart0f="@+id/containercomponens"
+        app:layout_constraintTop_toTop0f="@id/containercomponens"
+        tools:layout_editor_absoluteX="40dp"
+        tools:layout_editor_absoluteY="403dp" />
+
+    <EditText
+
+        android:id="@+id/editText2"
+        style="@style/Edit_Text"
+        android:layout_width="332dp"
+        android:layout_height="60dp"
+        android:drawableRight="@drawable/key"
+        android:hint="Senha"
+        app:layout_constraintStart_toStart0f="@+id/containercomponens"
+        app:layout_constraintTop_toTop0f="@id/containercomponens"
+        tools:layout_editor_absoluteX="40dp"
+        tools:layout_editor_absoluteY="480dp" />
+
+    <Button
+        android:id="@+id/bt_entrada"
+        style="@style/Animation.Design.BottomSheetDialog"
+        appcompat.widget.AppCompatButton
+        android:layout_width="248dp"
+        android:layout_height="45dp"
+        android:text="@string/Entrar"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/logo" />
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStart0f="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="601dp" />
+
+    <TextView
+        android:id="@+id/text_tela_cadastro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Criar_conta"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStart0f="parent"
+        app:layout_constraintTop_toTop0f="@+id/progressbar"
+        tools:layout_editor_absoluteX="217dp"
+        tools:layout_editor_absoluteY="548dp" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">lucas-gabriel-dispositivos-moveis</string>
+    <string name="Entrar">Entrar</string>
+    <string name="Criar_conta">Crie sua conta aqui</string>
 </resources>
