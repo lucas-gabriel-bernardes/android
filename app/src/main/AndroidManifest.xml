@@ -11,9 +11,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Lucasgabrieldispositivosmoveis">
-        <activity
-            <action android:name ="android.intent.action.MAIN" />
-         <category android:name ="android.intent.category.LAUNCHER" />
+
+        <!-- AS LINHAS COM <action> E <category> QUE ESTAVAM AQUI FORAM REMOVIDAS -->
+
         <activity
             android:name=".MainActivity"
             android:exported="true"

@@ -1,40 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <color name="purple_200">#FFBB86FC</color>
+<resources><color name="purple_200">#FFBB86FC</color>
     <color name="purple_500">#FF6200EE</color>
     <color name="purple_700">#FF3700B3</color>
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="araguari.1">#FFD11C</color>
-    <color name="araguari.2">#FFEF66</color>
-    <color name="aragauri.3">#FF8038</color>
 
-    </<?xml version="1.0" encoding="utf-8"?><resources>
-<color name="purple_200">#FFBB86FC</color>
-<color name="purple_500">#FF6200EE</color>
-<color name="purple_700">#FF3700B3</color>
-<color name="teal_200">#FF03DAC5</color>
-<color name="teal_700">#FF018786</color>
-<color name="black">#FF000000</color>
-<color name="white">#FFFFFFFF</color>
-<color name="araguari_1">#FFD11C</color>
-<color name="araguari_2">#FFEF66</color>
-<color name="araguari_3">#FF8038</color>
-</resources><color name="aragauri.3">#FF8038</color>
-
-    </color>  <!-- This tag was "floating" and had no opening <color> tag -->
-    </resources><?xml version="1.0" encoding="utf-8"?><resources>
-<color name="purple_200">#FFBB86FC</color>
-<color name="purple_500">#FF6200EE</color>
-<color name="purple_700">#FF3700B3</color>
-<color name="teal_200">#FF03DAC5</color>
-<color name="teal_700">#FF018786</color>
-<color name="black">#FF000000</color>
-<color name="white">#FFFFFFFF</color>
-<color name="araguari.1">#FFD11C</color>
-<color name="araguari.2">#FFEF66</color>
-<color name="aragauri.3">#FF8038</color>
-</resources>color>
+    <!-- Usei nomes com underline, que é o padrão recomendado para Android -->
+    <color name="araguari_1">#FFD11C</color>
+    <color name="araguari_2">#FFEF66</color>
+    <color name="araguari_3">#FF8038</color>
 </resources>

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
@@ -9,61 +10,65 @@
     tools:context=".FormLogin">
 
     <ImageView
+        android:id="@+id/img_logo"
         android:layout_width="488dp"
         android:layout_height="423dp"
         android:src="@drawable/palacio"
-        tools:layout_editor_absoluteX="-39dp"
-        tools:layout_editor_absoluteY="-59dp" />
+        android:layout_marginTop="-59dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-
+        android:id="@+id/edit_email"
         style="@style/Edit_Text"
-        android: android:id="@+id/edit_email"
-        android:drawableRight="@drawable/email"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="20dp"
+        android:drawableEnd="@drawable/email"
         android:hint="E-mail"
-        app:layout_constraintStart_toStart0f="@+id/containercomponens"
-        app:layout_constraintTop_toTop0f="@id/containercomponens"
-        tools:layout_editor_absoluteX="40dp"
-        tools:layout_editor_absoluteY="403dp" />
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/img_logo" />
 
     <EditText
-
-        android:id="@+id/editText2"
+        android:id="@+id/edit_senha"
         style="@style/Edit_Text"
-        android:layout_width="332dp"
+        android:layout_width="0dp"
         android:layout_height="60dp"
-        android:drawableRight="@drawable/key"
+        android:layout_marginTop="15dp"
+        android:drawableEnd="@drawable/key"
         android:hint="Senha"
-        app:layout_constraintStart_toStart0f="@+id/containercomponens"
-        app:layout_constraintTop_toTop0f="@id/containercomponens"
-        tools:layout_editor_absoluteX="40dp"
-        tools:layout_editor_absoluteY="480dp" />
+        android:inputType="textPassword"
+        android:maxLength="150"
+        app:layout_constraintEnd_toEndOf="@id/edit_email"
+        app:layout_constraintStart_toStartOf="@id/edit_email"
+        app:layout_constraintTop_toBottomOf="@id/edit_email" />
 
     <Button
         android:id="@+id/bt_entrada"
-        style="@style/Animation.Design.BottomSheetDialog"
-        appcompat.widget.AppCompatButton
-        android:layout_width="248dp"
+        android:layout_width="0dp"
         android:layout_height="45dp"
+        android:layout_marginTop="30dp"
         android:text="@string/Entrar"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStart0f="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="601dp" />
+        android:backgroundTint="@color/black"
+        app:layout_constraintEnd_toEndOf="@id/edit_senha"
+        app:layout_constraintStart_toStartOf="@id/edit_senha"
+        app:layout_constraintTop_toBottomOf="@id/edit_senha" />
 
     <TextView
         android:id="@+id/text_tela_cadastro"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
         android:text="@string/Criar_conta"
         android:textColor="@color/black"
-        android:textSize="18dp"
+        android:textSize="18sp"
         android:textStyle="bold"
-        app:layout_constraintStart_toStart0f="parent"
-        app:layout_constraintTop_toTop0f="@+id/progressbar"
-        tools:layout_editor_absoluteX="217dp"
-        tools:layout_editor_absoluteY="548dp" />
-
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bt_entrada" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
