@@ -8,7 +8,6 @@
     <color name="white">#FFFFFFFF</color>
 
     <!-- Usei nomes com underline, que é o padrão recomendado para Android -->
-    <color name="araguari_1">#FFD11C</color>
-    <color name="araguari_2">#FFEF66</color>
-    <color name="araguari_3">#FF8038</color>
+    <color name="araguari_1">#EEE8AA</color>
+    <color name="araguari_2">#CD853F</color>
 </resources>

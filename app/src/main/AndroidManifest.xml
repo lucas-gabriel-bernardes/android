@@ -12,19 +12,33 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Lucasgabrieldispositivosmoveis">
 
-        <!-- AS LINHAS COM <action> E <category> QUE ESTAVAM AQUI FORAM REMOVIDAS -->
+        <!-- TELA DE LOGIN -->
+        <activity
+            android:name=".FormLogin"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"> <!-- ADICIONE ESTA LINHA -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".FormCadastro"
+            android:theme="@style/AppTheme" />
+
+        <activity
+            android:name=".TelaPerfil"
+            android:exported="false"
+            android:theme="@style/AppTheme" />
 
         <activity
             android:name=".MainActivity"
             android:exported="true"
             android:label="@string/app_name"
             android:theme="@style/Theme.Lucasgabrieldispositivosmoveis">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
+
     </application>
 
 </manifest>
